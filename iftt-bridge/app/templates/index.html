@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>IFTTT Bridge</title>
+    </head>
+
+    <meta http-equiv="refresh" content="10"/>
+
+    </script>
+
+    <body>
+        <h1>Received commands</h1>
+        <table>
+            <tr>
+                <td>Localtime</td>
+                <td>Handler</td>
+                <td>Target</td>
+                <td>Command</td>
+            </tr>
+            {% for entry in reversed(history) %}
+                <tr>
+                    <td>{{ entry.localtime }}</td>
+                    <td>{{ entry.handler }}</td>
+                    <td>{{ entry.target }}</td>
+                    <td>{{ entry.command }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
+
