@@ -1,0 +1,1 @@
+cd ptsyslog; ./build.sh
