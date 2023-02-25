@@ -11,3 +11,9 @@ This is very useful if you are in the field and need to debug some infrastructur
 ```bash
 docker-compose -f docker-compose.yml up
 ```
+
+# Testing
+There is a small sample script, that sends log lines to a syslog server that is running on localhost:514/udp
+```bash
+python3 testsyslog.py
+```
