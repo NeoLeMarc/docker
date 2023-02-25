@@ -6,3 +6,8 @@ It is mostly based on the docker-compose file from loki, I have added the
 container for syslog.
 
 This is very useful if you are in the field and need to debug some infrastructure like switches but don't have a syslog server handy.
+
+# Usage
+```bash
+docker-compose -f docker-compose.yml up
+```
