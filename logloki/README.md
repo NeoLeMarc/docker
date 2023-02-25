@@ -11,6 +11,7 @@ This is very useful if you are in the field and need to debug some infrastructur
 ```bash
 docker-compose -f docker-compose.yml up
 ```
+The container provides a syslog target on port 514 udp on localhost. You can use docker, to expose this port. It also starts a grafana on http://localhost:3000. You can login using user "admin" and password "admin". Grafana then let's you change the password. Finally you need to create a new Loki datasource. Just add http://loki:3100 and you are set.
 
 # Testing
 There is a small sample script, that sends log lines to a syslog server that is running on localhost:514/udp
